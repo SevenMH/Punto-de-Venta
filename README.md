@@ -6,11 +6,11 @@
 
 | Dato | Detalle |
 |------|---------|
-| **Versión** | 1.1 |
+| **Versión** | 1.3.12 |
 | **Plataforma** | Windows (WinForms) |
 | **Lenguaje** | C# |
 | **Base de Datos** | SQL Server (`Libreria`) |
-| **Servidor** | `DESKTOP-IQ00U68` |
+| **Servidor** | `Local` |
 | **Autenticación BD** | Integrated Security |
 | **Librería de iconos** | FontAwesome.Sharp |
 | **Generación de PDFs** | QuestPDF |
@@ -387,7 +387,7 @@ La sesión activa se gestiona mediante la clase estática `Sesion` (`Sesion.IdEm
 
 ---
 
-## Resumen Ejecutivo
+## Resumen
 
 **Librería Morita** es un POS completo para librerías que integra:
 
