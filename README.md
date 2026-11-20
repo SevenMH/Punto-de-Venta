@@ -21,7 +21,7 @@
 
 El proyecto sigue un enfoque de **formularios autocontenidos** donde cada `Form` construye su interfaz manualmente mediante el método `ConstruirInterfazManual()`, evitando el diseñador visual. Las consultas SQL se realizan directamente con `Microsoft.Data.SqlClient`.
 
-### Estructura de archivos identificados
+### Estructura de archivos 
 
 ```
 P1/
@@ -115,7 +115,7 @@ public static class Sesion
 
 ---
 
-## Esquema de Base de Datos (inferido)
+## Esquema de Base de Datos
 
 Las tablas utilizadas por los formularios son:
 
@@ -381,10 +381,8 @@ La sesión activa se gestiona mediante la clase estática `Sesion` (`Sesion.IdEm
 2. **Lógica de negocio en la capa de UI** → considerar extraer a una capa de servicios/repositorios.
 3. **Falta la lógica de actualización de stock** al registrar compras (el comentario existe, pero no la implementación visible).
 4. **FrmLibroEditar está incompleto** (el archivo se corta en `// =`).
-5. **Sin validación de stock negativo** visible en el fragmento del POS.
-6. **No se observa `FrmPuntoVenta`** ni `FrmMovimientoCaja` en el conjunto entregado, aunque son referenciados por `FrmCaja`.
-7. **TicketGenerator**: el tamaño del ticket es fijo (80×250 mm). Tickets con muchos productos podrían cortarse; se sugiere calcular la altura dinámicamente según el número de ítems.
-8. **TicketGenerator**: la tasa de IVA (16%) está hardcodeada → debería configurarse o leerse de la BD.
+5. **TicketGenerator**: el tamaño del ticket es fijo (80×250 mm). Tickets con muchos productos podrían cortarse; se sugiere calcular la altura dinámicamente según el número de ítems.
+6. **TicketGenerator**: la tasa de IVA (16%) está hardcodeada → debería configurarse o leerse de la BD.
 
 ---
 
