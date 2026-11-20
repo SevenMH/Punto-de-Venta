@@ -26,29 +26,30 @@ El proyecto sigue un enfoque de **formularios autocontenidos** donde cada `Form`
 ```
 P1/
 ├── Modelos/
-│   ├── DetalleCompraItem.cs
-│   └── DetalleVentaItem.cs
+│   ├── DetalleCompraItem.cs      # Modelo de datos para los ítems del módulo de compras
+│   └── DetalleVentaItem.cs       # Modelo de datos para los ítems del carrito de ventas
 │
 ├── Formularios de Caja/
-│   ├── FrmAperturaCaja.cs
-│   ├── FrmCaja.cs
-│   └── FrmCierreCaja.cs
+│   ├── FrmAperturaCaja.cs        # Interfaz para registrar el monto inicial y abrir turno
+│   ├── FrmCaja.cs                # Panel principal de caja (resumen, historial y accesos)
+│   └── FrmCierreCaja.cs          # Interfaz para el conteo final, cálculo de diferencias y cierre
 │
 ├── Formularios de Clientes/
-│   ├── FrmClientes.cs
-│   └── FrmClienteEditar.cs
+│   ├── FrmClientes.cs            # Listado y gestión general de clientes
+│   └── FrmClienteEditar.cs       # Formulario para crear o editar datos de un cliente
 │
 ├── Formularios de Productos/
-│   ├── FrmLibroEditar.cs
-│   └── FrmAutorEditar.cs
+│   ├── FrmLibroEditar.cs         # Formulario para crear o editar libros del catálogo
+│   └── FrmAutorEditar.cs         # Registro rápido de nuevos autores
 │
 ├── Formularios de Compras/
-│   └── FrmCompras.cs
+│   └── FrmCompras.cs             # Módulo de registro de compras a proveedores y actualización de stock
 │
-├── Utilidades/
-│   ├── Sesion.cs
-│   ├── TicketGenerator.cs
-│   └── FrmAcercaDe.cs
+└── Utilidades/
+    ├── Sesion.cs                 # Clase estática para almacenar los datos del usuario logueado
+    ├── TicketGenerator.cs        # Generador de tickets en PDF usando QuestPDF
+    └── FrmAcercaDe.cs            # Ventana informativa con la guía rápida del sistema
+
 ```
 
 ---
