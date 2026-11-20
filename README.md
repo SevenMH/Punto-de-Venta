@@ -11,10 +11,10 @@
 | **Lenguaje** | C# |
 | **Base de Datos** | SQL Server (`Libreria`) |
 | **Servidor** | `Local` |
-| **Autenticación BD** | Integrated Security |
+| **Autenticación BD** | Integrated Security (Windows Authentication) |
 | **Librería de iconos** | FontAwesome.Sharp |
-| **Generación de PDFs** | QuestPDF |
-
+| **Generación de PDFs** | QuestPDF (Licencia Community) |
+| **Generación de Excel** | ClosedXM |
 ---
 
 ## Arquitectura del Proyecto
