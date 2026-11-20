@@ -378,9 +378,10 @@ La sesión activa se gestiona mediante la clase estática `Sesion` (`Sesion.IdEm
 ## Observaciones y oportunidades de mejora
 
 1. **Cadena de conexión hardcodeada** en cada archivo (`Sesion.cs` es la excepción, no la incluye) → debería centralizarse en `App.config` o una clase `DbConfig`.
-2. **Lógica de negocio en la capa de UI** → considerar extraer a una capa de servicios/repositorios.
-3. **Falta la lógica de actualización de stock** al registrar compras (el comentario existe, pero no la implementación visible).
-4. **FrmLibroEditar está incompleto** (el archivo se corta en `// =`).
+2. **Cadena de conexión con base de datos** en archivos como Login.cs, PantallaVenta.cs, FrmCaja.cs, FrmAperturaCaja.cs, FrmCierreCaja.cs, FrmAutorEditar.cs y TicketGenerator.cs, contienen múltiples conexiones (private readonly string connectionString =
+    @"Server=DESKTOP-IQ00U68;Database=Libreria;Integrated Security=True;TrustServerCertificate=True;";).
+3. **Lógica de negocio en la capa de UI** → considerar extraer a una capa de servicios/repositorios.
+4. **Falta la lógica de actualización de stock** al registrar compras (falta implementación).
 5. **TicketGenerator**: el tamaño del ticket es fijo (80×250 mm). Tickets con muchos productos podrían cortarse; se sugiere calcular la altura dinámicamente según el número de ítems.
 6. **TicketGenerator**: la tasa de IVA (16%) está hardcodeada → debería configurarse o leerse de la BD.
 
